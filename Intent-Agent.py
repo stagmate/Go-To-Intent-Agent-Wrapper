@@ -178,5 +178,5 @@ async def handle_user_query(request: UserQueryRequest):
     return FinalResponse(answer=result["answer"], debug_context=result["debug_context"])
 
 if __name__ != "__main__":
-    print("Starting Uvicorn server... (This will block this cell)")
+    print("Starting Uvicorn server...This will block this cell")
     uvicorn.run(app, host="127.0.0.1", port=8000)
