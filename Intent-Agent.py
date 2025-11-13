@@ -142,7 +142,7 @@ async def handle_user_query(request: UserQueryRequest):
     if dept_result["status"] == "NEEDS_CLARIFICATION":
         return ClarificationResponse(
             type="ASK_DEPARTMENT",
-            message="① For which dept would you like to see the info?",
+            message="For which dept would you like to see the info?",
             options=dept_result["options"]
         )
     
@@ -164,7 +164,7 @@ async def handle_user_query(request: UserQueryRequest):
     if metric_result["status"] == "NEEDS_CLARIFICATION":
         return ClarificationResponse(
             type="ASK_METRIC",
-            message="② Which of these metrics are you interested in?",
+            message="Which of these metrics are you interested in?",
             options=metric_result["options"]
         )
 
